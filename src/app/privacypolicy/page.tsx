@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
                         app or to charge for its services, at any time and for
                         any reason. We will never charge you for the app or its
                         services without making it very clear to you exactly
-                        what you're paying for.{' '}
+                        what you&apos;re paying for.
                     </p>
 
                     <p>
@@ -131,7 +131,7 @@ export default function PrivacyPolicy() {
                         Cookies are files with a small amount of data that are
                         commonly used as anonymous unique identifiers. These are
                         sent to your browser from the websites that you visit
-                        and are stored on your device's internal memory.
+                        and are stored on your device&apos;s internal memory.
                     </p>
 
                     <p>
@@ -193,7 +193,7 @@ export default function PrivacyPolicy() {
                         third-party sites or services.
                     </p>
 
-                    <h4>Children's Privacy</h4>
+                    <h4>Children&apos;s Privacy</h4>
 
                     <p>
                         These Services do not address anyone under the age of
