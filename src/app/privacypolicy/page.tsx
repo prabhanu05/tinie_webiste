@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
                         app or to charge for its services, at any time and for
                         any reason. We will never charge you for the app or its
                         services without making it very clear to you exactly
-                        what you’re paying for.{' '}
+                        what you're paying for.{' '}
                     </p>
 
                     <p>
@@ -193,7 +193,7 @@ export default function PrivacyPolicy() {
                         third-party sites or services.
                     </p>
 
-                    <h4>Children’s Privacy</h4>
+                    <h4>Children's Privacy</h4>
 
                     <p>
                         These Services do not address anyone under the age of
