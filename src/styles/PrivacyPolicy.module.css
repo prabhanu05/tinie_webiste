@@ -1,0 +1,20 @@
+.container {
+    padding-top: 3rem;
+    width: min(90%, 800px);
+    margin-inline: auto;
+}
+
+.container > h1 {
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.container > .content > p {
+    padding-block: 1rem;
+    text-align: justify;
+}
+
+.container > .content > h4 {
+    padding-top: 1rem;
+}
