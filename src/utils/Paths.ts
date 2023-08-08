@@ -3,7 +3,7 @@ export const PATHS = {
     TnC: '/tnc',
     PrivacyPolicy: '/privacypolicy',
     ContactUs: '/contact',
-    Download: '/dowload',
+    Download: '/download',
 };
 
 export type IPaths = keyof typeof PATHS;
