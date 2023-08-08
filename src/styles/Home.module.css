@@ -7,6 +7,7 @@
     text-align: center;
     font-size: 2.25rem;
     padding-top: 6rem;
+    padding-bottom: 10rem;
 }
 
 .section1 {
@@ -76,6 +77,75 @@
     max-width: 100%;
 }
 
+.section2 {
+    width: 90%;
+    background-color: var(--dark-bg);
+    display: flex;
+    position: relative;
+    padding-inline: calc(346px + 2%);
+    justify-content: space-between;
+}
+
+.section2 .mobilephone {
+    position: absolute;
+    right: -10px;
+    transform: translateY(-20%);
+    z-index: 1;
+}
+
+.section2 .girl_cart {
+    display: flex;
+    height: 316px;
+    margin-top: -1rem;
+}
+
+.section2 .pick_price {
+    display: flex;
+    margin-bottom: -30px;
+}
+
+.section2 .pick_price img {
+    align-self: flex-end;
+}
+
+.section2 .girl_cart h3 {
+    align-self: flex-end;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0px 2px 2px var(--text-shadow);
+    max-width: 200px;
+    padding-bottom: 12px;
+}
+
+.section2 .pick_price h3 {
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0px 2px 2px var(--text-shadow);
+    max-width: 200px;
+    padding-top: 12px;
+}
+
+.section3 {
+    width: 98%;
+    margin-left: auto;
+    background-color: var(--dark-bg);
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 7rem;
+}
+
+.section3 .mobilephone {
+    position: absolute;
+    left: -10px;
+    transform: translateY(-40%);
+    z-index: 1;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 320px) {
     .section1 .logos {
         flex-direction: column;
@@ -88,7 +158,7 @@
     }
 
     .content > .heading {
-        padding-top: 2rem;
+        padding-block: 2rem;
     }
 
     .section1 {

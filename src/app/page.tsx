@@ -2,15 +2,20 @@
 
 import Header from '@/components/common/Header';
 import styles from '@/styles/Home.module.css';
-import { Hind, Paytone_One } from 'next/font/google';
+import { Amiko, Hind, Paytone_One } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
+import Coupons from '/public/Coupons.png';
+import GirlWithCart from '/public/GirlWithCart.png';
+import MobileApp1 from '/public/MobileApp.png';
+import MobileApp2 from '/public/MobileApp2.png';
 import YoungMan from '/public/YoungManSitting.png';
 import Apple from '/public/apple.png';
 import Google from '/public/google.png';
 
 const hind = Hind({ weight: '400', subsets: ['latin'] });
 const paytone = Paytone_One({ weight: '400', subsets: ['latin'] });
+const amiko = Amiko({ weight: '400', subsets: ['latin'] });
 
 export default function Home() {
     return (
@@ -43,6 +48,31 @@ export default function Home() {
                 <h1 className={`${paytone.className} ${styles.heading}`}>
                     THE ONE HYPERLOCAL LIFESTYLE APP
                 </h1>
+                <div className={styles.section2}>
+                    <div className={styles.girl_cart}>
+                        <Image src={GirlWithCart} alt='Girl with Cart' />
+                        <h3 className={amiko.className}>
+                            Explore The Curated Options
+                        </h3>
+                    </div>
+                    <div className={styles.pick_price}>
+                        <h3 className={amiko.className}>Pick The Best Price</h3>
+                        <Image src={Coupons} alt='Coupons' />
+                    </div>
+                    <Image
+                        src={MobileApp1}
+                        alt='Mobile App'
+                        className={styles.mobilephone}
+                    />
+                </div>
+                <div className={styles.section3}>
+                    <Image
+                        src={MobileApp2}
+                        alt='Mobile App'
+                        className={styles.mobilephone}
+                    />
+                    sss
+                </div>
             </main>
         </>
     );
