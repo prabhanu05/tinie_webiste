@@ -1,6 +1,7 @@
 'use client';
 
 import Header from '@/components/common/Header';
+import SecondaryLayout from '@/components/common/SecondaryLayout';
 import styles from '@/styles/PrivacyPolicy.module.css';
 import Link from 'next/link';
 
@@ -8,9 +9,9 @@ export default function PrivacyPolicy() {
     return (
         <>
             <Header />
-            <main className={styles.container}>
-                <h1>Privacy Policy</h1>
-                <div className={styles.content}>
+            <SecondaryLayout text='Privacy Policy'>
+                <div className={styles.container}>
+                    <h4>Privacy Policy</h4>
                     <p>
                         tinie business private limited built the tinie app as a
                         Commercial app. This SERVICE is provided by tinie
@@ -66,10 +67,10 @@ export default function PrivacyPolicy() {
                         information used to identify you.
                     </p>
 
-                    <h4>
+                    <p>
                         Link to Terms and Conditions of third-party service
                         providers used by the app
-                    </h4>
+                    </p>
 
                     <ul>
                         <li>
@@ -114,6 +115,7 @@ export default function PrivacyPolicy() {
                         </li>
                     </ul>
 
+                    <h4>Log Data</h4>
                     <p>
                         We want to inform you that whenever you use our Service,
                         in a case of an error in the app we collect data and
@@ -216,9 +218,8 @@ export default function PrivacyPolicy() {
                         posting the new Privacy Policy on this page.
                     </p>
 
-                    <p>
-                        These terms and conditions are effective as of
-                        2022-07-25
+                    <p className={styles.padding}>
+                        This policy is Effective as of 2022-07-25
                     </p>
 
                     <h4>Contact Us</h4>
@@ -229,7 +230,7 @@ export default function PrivacyPolicy() {
                         <Link href='mailto:info@tinie.in'>info@tinie.in</Link>.
                     </p>
                 </div>
-            </main>
+            </SecondaryLayout>
         </>
     );
 }

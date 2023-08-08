@@ -6,10 +6,10 @@ const paytone = Paytone_One({ weight: '400', subsets: ['latin'] });
 
 const SecondaryLayout = (props: { text: string; children: ReactNode }) => {
     return (
-        <div className={styles.content}>
+        <main className={styles.content}>
             <h1 className={paytone.className}>{props.text}</h1>
             <div className={styles.container}>{props.children}</div>
-        </div>
+        </main>
     );
 };
 
