@@ -1,0 +1,43 @@
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.container h3 {
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container .subcontainer {
+    padding-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2.5rem;
+}
+
+.container .subcontainer .row {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.container .subcontainer .img {
+    min-width: 112px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 525px) {
+    .container .subcontainer .row {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .container .subcontainer {
+        padding-top: 1.5rem;
+    }
+}

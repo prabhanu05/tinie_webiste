@@ -1,20 +1,21 @@
 .container {
-    padding-top: 3rem;
-    width: min(90%, 800px);
+    width: 90%;
     margin-inline: auto;
 }
 
-.container > h1 {
-    text-align: center;
-    font-weight: 600;
-    text-decoration: underline;
+.container h4 {
+    padding-top: 1.25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--black);
 }
 
-.container > .content > p {
-    padding-block: 1rem;
-    text-align: justify;
+.container p,
+.container a {
+    font-size: 1.5rem;
+    color: var(--black);
 }
 
-.container > .content > h4 {
-    padding-top: 1rem;
+.container p.padding {
+    padding-top: 1.25rem;
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import Header from '@/components/common/Header';
+import SecondaryLayout from '@/components/common/SecondaryLayout';
 import styles from '@/styles/TnC.module.css';
 import Link from 'next/link';
 
@@ -8,9 +9,9 @@ export default function TnC() {
     return (
         <>
             <Header />
-            <main className={styles.container}>
-                <h1>Terms and Conditions</h1>
-                <div className={styles.content}>
+            <SecondaryLayout text='Terms &amp; Conditions'>
+                <div className={styles.container}>
+                    <h4>Terms and Conditions</h4>
                     <p>
                         By downloading or using the app, these terms will
                         automatically apply to you - you should make sure
@@ -55,10 +56,10 @@ export default function TnC() {
                         Terms and Conditions.
                     </p>
 
-                    <h4>
+                    <p>
                         Link to Terms and Conditions of third-party service
                         providers used by the app
-                    </h4>
+                    </p>
 
                     <ul>
                         <li>
@@ -133,7 +134,7 @@ export default function TnC() {
                         from the bill payer for using the app.
                     </p>
 
-                    <p>
+                    <p className={styles.padding}>
                         Along the same lines, tinie business private limited
                         cannot always take responsibility for the way you use
                         the app i.e. You need to make sure that your device
@@ -197,7 +198,7 @@ export default function TnC() {
                         <Link href='mailto:info@tinie.in'>info@tinie.in</Link>.
                     </p>
                 </div>
-            </main>
+            </SecondaryLayout>
         </>
     );
 }
