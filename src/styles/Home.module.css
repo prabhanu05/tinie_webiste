@@ -1,5 +1,6 @@
 .content {
     padding-top: 6rem;
+    padding-bottom: 3rem;
 }
 
 .content > .heading {
@@ -96,16 +97,7 @@
 .section2 .girl_cart {
     display: flex;
     height: 316px;
-    margin-top: -1rem;
-}
-
-.section2 .pick_price {
-    display: flex;
-    margin-bottom: -30px;
-}
-
-.section2 .pick_price img {
-    align-self: flex-end;
+    margin-top: -18px;
 }
 
 .section2 .girl_cart h3 {
@@ -117,6 +109,15 @@
     text-shadow: 0px 2px 2px var(--text-shadow);
     max-width: 200px;
     padding-bottom: 12px;
+}
+
+.section2 .pick_price {
+    display: flex;
+    margin-bottom: -30px;
+}
+
+.section2 .pick_price img {
+    align-self: flex-end;
 }
 
 .section2 .pick_price h3 {
@@ -136,7 +137,9 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-    margin-top: 7rem;
+    margin-block: 7rem;
+    padding-left: calc(2% + 346px);
+    padding-right: calc(10% + 346px);
 }
 
 .section3 .mobilephone {
@@ -146,9 +149,112 @@
     z-index: 1;
 }
 
+.section3 .chat {
+    display: flex;
+}
+
+.section3 .chat img {
+    align-self: flex-end;
+}
+
+.section3 .chat h3 {
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0px 2px 2px var(--text-shadow);
+    max-width: 250px;
+    padding-top: 12px;
+}
+
+.section3 .book_slot {
+    display: flex;
+    height: 316px;
+    margin-top: -17px;
+}
+
+.section3 .book_slot h3 {
+    align-self: flex-end;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0px 2px 2px var(--text-shadow);
+    max-width: 200px;
+    padding-bottom: 12px;
+}
+
+.download_row {
+    padding-block: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.75rem;
+}
+
+.partner_download {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.partner_download > h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    align-self: flex-end;
+}
+
+.partner_download .partner_content {
+    display: flex;
+    align-self: flex-end;
+    column-gap: 0.75rem;
+}
+
+.partner_download .partner_content p {
+    color: var(--black);
+    font-size: 1.15rem;
+    padding: 10px;
+}
+
+.partner_download .partner_content .logo_stack {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 320px) {
     .section1 .logos {
         flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+    .download_row {
+        flex-direction: column;
+        padding-bottom: 1rem;
+        padding-top: 2.5rem;
+    }
+
+    .partner_download {
+        align-items: center;
+        width: 100%;
+        padding-bottom: 0rem;
+    }
+
+    .partner_download > h3 {
+        align-self: center;
+        text-align: center;
+    }
+
+    .partner_download .partner_content {
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+        align-self: center;
     }
 }
 
@@ -158,7 +264,8 @@
     }
 
     .content > .heading {
-        padding-block: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 3.5rem;
     }
 
     .section1 {
@@ -185,5 +292,114 @@
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
     .section1 {
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 374px) {
+    .section2 .girl_cart img,
+    .section2 .pick_price img,
+    .section3 .chat img,
+    .section3 .book_slot img {
+        height: auto;
+        object-fit: contain;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .section2,
+    .section3 {
+        padding-inline: 2%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+    }
+
+    .section2 .mobilephone,
+    .section3 .mobilephone {
+        position: static;
+        max-width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: contain;
+        transform: translateY(10%);
+    }
+
+    .section3 .mobilephone {
+        order: 1;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1174px) {
+    .section2,
+    .section3 {
+        padding-inline: 2%;
+        width: 100%;
+        display: grid;
+        grid-gap: 1rem;
+    }
+
+    .section2 .mobilephone,
+    .section3 .mobilephone {
+        position: static;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section2 .girl_cart,
+    .section3 .chat {
+        grid-area: cart;
+    }
+
+    .section2 .pick_price,
+    .section3 .book_slot {
+        grid-area: price;
+    }
+
+    .section2 .mobilephone,
+    .section3 .mobilephone {
+        grid-area: mobile;
+        transform: translateY(-4%);
+    }
+
+    .section2 {
+        grid-template-areas:
+            'cart mobile'
+            'price mobile';
+    }
+
+    .section3 {
+        grid-template-areas:
+            'mobile cart'
+            'mobile price';
+    }
+}
+
+@media only screen and (min-width: 1175px) and (max-width: 1339px) {
+    .section2 {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .section3 {
+        padding-right: 2%;
+    }
+}
+
+@media only screen and (min-width: 1340px) and (max-width: 1519px) {
+    .section2 .girl_cart,
+    .section2 .pick_price,
+    .section3 .chat,
+    .section3 .book_slot {
+        flex-direction: column;
+    }
+
+    .section2 .girl_cart h3,
+    .section2 .pick_price h3,
+    .section3 .chat h3,
+    .section3 .book_slot h3 {
+        align-self: center;
     }
 }
