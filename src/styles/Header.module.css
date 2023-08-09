@@ -4,6 +4,7 @@
     padding-top: 2rem;
     column-gap: 0.5rem;
     padding-inline: 2%;
+    position: relative;
 }
 
 .header_btn {
@@ -32,6 +33,90 @@
     width: 100%;
 }
 
+.toggleBtn {
+    border: none;
+    height: 57px;
+    width: 66px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 12px;
+    cursor: pointer;
+    background-color: var(--white);
+    box-shadow: 0px 4px 4px 0px var(--button-shadow);
+    position: absolute;
+    right: 16px;
+    display: none;
+}
+
+.line {
+    width: 40px;
+    height: 5px;
+    background-color: var(--black);
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.is_active {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.hamburger.is_active .line:nth-child(2) {
+    width: 0px;
+}
+
+.hamburger.is_active .line:nth-child(1),
+.hamburger.is_active .line:nth-child(3) {
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.hamburger.is_active .line:nth-child(1) {
+    -webkit-transform: translateY(13px);
+    -ms-transform: translateY(13px);
+    -o-transform: translateY(13px);
+    transform: translateY(13px);
+}
+
+.hamburger.is_active .line:nth-child(3) {
+    -webkit-transform: translateY(-13px) rotate(90deg);
+    -ms-transform: translateY(-13px) rotate(90deg);
+    -o-transform: translateY(-13px) rotate(90deg);
+    transform: translateY(-13px) rotate(90deg);
+}
+
+.list {
+    display: none;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 1rem 2%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.list.active {
+    max-height: 300px;
+}
+
+.list button {
+    display: none;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 1023px) {
     .header {
         flex-direction: column;
@@ -46,5 +131,28 @@
         margin-top: 0px;
         align-self: center;
         order: -1;
+    }
+
+    .list {
+        display: flex;
+    }
+
+    .header > button {
+        display: none;
+    }
+
+    .toggleBtn {
+        display: block !important;
+    }
+
+    .list button {
+        min-height: 0px;
+        overflow: hidden;
+        display: block;
+        transition: min-height 0.3s ease-in-out;
+    }
+
+    .list.active button {
+        min-height: 45px;
     }
 }
