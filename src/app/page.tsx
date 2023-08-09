@@ -68,6 +68,7 @@ export default function Home() {
                         src={MobileApp1}
                         alt='Mobile App'
                         className={styles.mobilephone}
+                        quality={100}
                     />
                 </div>
 
@@ -76,6 +77,7 @@ export default function Home() {
                         src={MobileApp2}
                         alt='Mobile App'
                         className={styles.mobilephone}
+                        quality={100}
                     />
                     <div className={styles.chat}>
                         <h3 className={amiko.className}>
