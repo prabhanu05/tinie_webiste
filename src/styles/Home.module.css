@@ -375,7 +375,7 @@
         padding-inline: 2%;
         width: 100%;
         display: grid;
-        grid-gap: 1rem;
+        grid-column-gap: 1rem;
     }
 
     .section2 .mobilephone,
@@ -395,10 +395,18 @@
         grid-area: price;
     }
 
+    .section2 .girl_cart {
+        height: 250px;
+    }
+
     .section2 .mobilephone,
     .section3 .mobilephone {
         grid-area: mobile;
         transform: translateY(-4%);
+        max-height: 450px;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
     }
 
     .section2 {
