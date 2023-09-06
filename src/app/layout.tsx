@@ -6,7 +6,7 @@ const ibmPlexSans = IBM_Plex_Sans({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
     title: 'tinie',
-    description: 'One Stop for all your business needs',
+    description: 'One Stop for all your lifestyle needs',
 };
 
 export default function RootLayout({
